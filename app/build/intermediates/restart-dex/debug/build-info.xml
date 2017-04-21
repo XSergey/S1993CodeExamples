@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a"
+    api-level="17"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="25749548208554"
+    token="-7657929408511301104"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="21253" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="5657" />
+    <task
+        name="verifier"
+        duration="2596" />
+
+    <artifact
+        location="C:\Users\Sergey\Desktop\PROJECTS\MAGADI\ANDROID\MagadiSkiletonSend\MagadiSkileton-send\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="25749548208554"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Sergey\Desktop\PROJECTS\MAGADI\ANDROID\MagadiSkiletonSend\MagadiSkileton-send\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

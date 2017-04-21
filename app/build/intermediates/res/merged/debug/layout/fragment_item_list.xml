@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/borders"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/noimage"
+        android:id="@+id/imageInList"
+        android:background="@drawable/bordersthin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:padding="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <com.vermilionsynergy.magadiskileton.MagadiTextView
+            android:text="Agromonte Cherry Tomatoes Pureed"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tvName" />
+
+        <com.vermilionsynergy.magadiskileton.MagadiTextView
+            android:text="by Canned Food"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tvCategory" />
+
+        <com.vermilionsynergy.magadiskileton.MagadiBoldTextView
+            android:text="AED 6.55"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:id="@+id/tvCost" />
+    </LinearLayout>
+
+    <com.vermilionsynergy.magadiskileton.MagadiButton
+        android:text="ADD"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:textColor="@color/colorWhite"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:padding="3dp"
+        android:id="@+id/btnAdd" />
+
+</LinearLayout>

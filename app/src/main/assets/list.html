@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <script src="jq.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css" media="screen">
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.cart').click(function(){
+                app.cartOpen();
+            });
+            $('.sale').click(function(){
+                app.SaleOpen();
+            });
+        });
+    </script>
+    </head>
+    <body>
+    <div id="menu" class="">
+        <div class="user">
+            <img src="no-user-img.jpg" alt="">
+            <h2>UserName</h2>
+            <div class="gear"></div>
+        </div>
+        <div class="menu-title">Categories</div>
+        <ul>
+            <li id="item1">
+                <span>Fruits and Vegetables</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+            <li id="item2">
+                <span>Ice Cream and Frozen</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+            <li id="item3">
+                <span>Canned Foods</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+            <li id="item4">
+                <span>Beverages</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+            <li id="item5">
+                <span>Cosmetics</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+            <li id="item6">
+                <span>Snacks and Bakery</span>
+                <ul class="">
+                    <li>Ice Cream</li>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Convenience Foods</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="menu-bg"></div>
+    <header>
+        <header>
+            <div class="menu"></div>
+            <div class="search"></div>
+            <div class="cart"></div>
+        </header>
+    </header>
+    <div class="container">
+        <h1 class="list">FRUITS AND VEGETABLES <span>FRUITS</span></h1>
+        <div class="filter-container">
+            <div class="filter">
+                <div class="tab">show
+                    <select name="" id="show">
+                        <option value="ALL">ALL</option>
+                        <option value="ALL">ALL</option>
+                        <option value="ALL">ALL</option>
+                    </select>
+                </div>
+                <div class="tab">
+                    sort
+                    <select name="" id="sort">
+                        <option value="BRANDS A-Z">BRANDS A-Z</option>
+                        <option value="BRANDS A-Z">BRANDS Z-A</option>
+                        <option value="COST A-Z">COST A-Z</option>
+                        <option value="COST A-Z">COST Z-A</option>
+                    </select>
+                </div>
+                <div class="tab">
+                    filter
+                    <select name="" id="filter">
+                        <option value="-">-</option>
+                        <option value="-">-</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <ul class="cardList list">
+            <li>
+                <img src="it-1.jpg" alt="">
+                <div class="title">RedMart White Artisan Bread</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 8.59</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-2.jpg" alt="">
+                <div class="title">RedMart Multigrain Bread Sliced</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 5.62</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-2.jpg" alt="">
+                <div class="title">RedMart Freshly Made Wholemeal Flatbread</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 8.94</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-3.jpg" alt="">
+                <div class="title">RedMart Freshly Made Wholemeal Wraps</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 6.55</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-4.jpg" alt="">
+                <div class="title">RedMart German Multigrain Roll 6s</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 6.55</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-5.jpg" alt="">
+                <div class="title">RedMart Swiss Country Bread</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 8.86</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-6.jpg" alt="">
+                <div class="title">RedMart Sesame Hamburger Buns 4s</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 2.87</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-7.jpg" alt="">
+                <div class="title">RedMart Focaccia With Herbs</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 1.34</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-1.jpg" alt="">
+                <div class="title">RedMart Focaccia With Herbs</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 5.91</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="item1.png" alt="">
+                <div class="title">Agromonte Cherry</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 5.46</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-2.jpg" alt="">
+                <div class="title">Agromonte Cherry</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 8.36</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-3.jpg" alt="">
+                <div class="title">RedMart Sliced Swiss Farmer Bread</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 8.92</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-4.jpg" alt="">
+                <div class="title">RedMart Wholemeal Artisan Bread</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 9.56</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-5.jpg" alt="">
+                <div class="title">RedMart Ciabatta Buns 4s</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 7.34</div>
+                <div class="add">add</div>
+            </li>
+            <li>
+                <img src="it-6.jpg" alt="">
+                <div class="title">RedMart Focaccia With Olives</div>
+                <div class="sub-title">by Canned Food</div>
+                <div class="cost-old">AED 6.73</div>
+                <div class="add">add</div>
+            </li>
+        </ul>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="host">http://94.158.156.180:9170</string>
+    <string name="url_reg">/rest/api/v1/auth/customer/create</string>
+    <string name="app_name">MagadiSkileton</string>
+    <string name="title_activity_cart5">Cart5Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="filters">
+        <item>Price A-Z</item>
+        <item>Price Z-A</item>
+        <item>Name A-Z</item>
+        <item>Name Z-A</item>
+    </string-array>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorMainBg"
+    tools:context="com.vermilionsynergy.magadiskileton.LoginActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorMainBg">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorMainBg"
+            android:layout_marginTop="13dp">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/goback"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_alignParentLeft="true"
+                android:onClick="backClick"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorMainBg" />
+
+            <TextView
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/textView2"
+                android:textAllCaps="true"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/magadimainlogo"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:hint="E-mail"
+            android:padding="10dp"
+            android:textColor="#ffbbbabb"
+            android:textColorHint="#ffbbbabb"
+            android:background="@drawable/layout_border"
+        />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:hint="password"
+            android:padding="10dp"
+            android:textColor="#ffbbbabb"
+            android:textColorHint="#ffbbbabb"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_border"
+            />
+
+        <Button
+            android:text="Enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="@drawable/layout_border"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="signIn"
+            android:id="@+id/button" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/facebook"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:onClick="facebookClick"
+
+            android:background="@color/colorMainBg"
+            android:id="@+id/imageButton2" />
+        <Button
+            android:text="Sign Up with E-mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:background="@color/colorMainBg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="signUp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/buttonRegister" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <script src="jq.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css" media="screen">
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.cart').click(function(){
+                app.cartOpen();
+            });
+            $('.sale').click(function(){
+                app.SaleOpen();
+            });
+            $('.cost').html(Math.round(100+Math.random()*900)/100);
+            var stars = Math.round(Math.random()*5);
+            for(var i = 0; i<=4; i++){
+                if(i <= stars){
+                    $('.rating li:nth-child('+i+')').addClass('star');
+                } else {
+                    $('.rating li:nth-child('+i+')').addClass('star-o');
+                }
+            }
+            $('.weight').html(Math.round(Math.random()*99)*10 + 'g');
+            var path = 'it-' + (Math.round(Math.random()*6)+1) + '.jpg';
+            console.log(path);
+            $('.image-container img').attr('src', path);
+            $('.back').click(function(){
+                app.goBack();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="back"></div>
+            <div class="search"></div>
+            <div class="cart"></div>
+        </header>
+    </header>
+    <div class="container-top object">
+        <h2>Agromonte Semi Dry Cherry Tomatoes</h2>
+        <h3>by Canned Food</h3>
+        <div class="image-container">
+            <img src="item-big.png" alt="">
+            <div class="weight">200 g</div>
+            <ul class="rating">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+            <div class="cost">AED 6.55</div>
+        </div>
+        <div class="description-title">Description:</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="addtocart">ADD TO CART</div>
+        <div class="also-title">People are also looking for:</div>
+        <ul class="also">
+            <li><img src="item2.png" alt=""></li>
+            <li><img src="item3.png" alt=""></li>
+            <li><img src="item5.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

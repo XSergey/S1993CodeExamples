@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vermilionsynergy.magadiskileton">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".SaleActivity" />
+        <activity android:name=".NewActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".ObjectActivity" />
+        <activity android:name=".Cart2Activity" />
+        <activity android:name=".Cart3Activity" />
+        <activity android:name=".Cart4Activity" />
+        <activity
+            android:name=".Cart5Activity"
+            android:label="@string/title_activity_cart5"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".PhoneConfActivity" />
+        <activity android:name=".LoginInActivity" />
+        <activity android:name=".FaqListActivity" />
+        <activity android:name=".FaqArticleActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".DeliveryTrackingActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".itemActivity" />
+        <activity android:name=".MainNewActivity" />
+        <activity android:name=".itemListActivity"></activity>
+    </application>
+
+</manifest>

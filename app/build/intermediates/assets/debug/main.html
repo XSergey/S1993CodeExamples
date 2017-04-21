@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <script src="jq.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="animate.css" />
+    <style type="text/css" media="screen">
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+html, body{
+    min-height: 100%;
+    min-width: 100%;
+}
+body{
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    overflow-x: hidden;
+}
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            z-index: 3;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            background-color: #6cbeba;
+        }
+        header > div{
+            display: inline-block;
+        }
+        header > .menu{
+            width: 50px;
+            height: 50px;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center center;;
+            background-image: url("menu.png");
+        }
+        header > .cart{
+            width: 50px;
+            height: 50px;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center center;;
+            background-image: url("cart.png");
+        }
+        header > .search{
+            width: calc(100% - 110px);
+            background-image: url("search-holder.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center center;;
+            height: 50px;
+        }
+        footer{
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            z-index: 3;
+            padding: 0;
+            margin: 0;
+            background-color: #F8F8F8;
+            /*border-top: solid 1px #6cbeba;*/
+            vertical-align: top;
+        }
+        footer div{
+            display: inline-block;
+            width: 50px;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            background-repeat: no-repeat;
+            color: #777779;
+            line-height: 80px;
+            vertical-align: top;
+            margin: 0 12px;
+        }
+        footer .sale{
+            background-size: 65%;
+            background-position: center 0;
+            background-image: url("sale-ico.png");
+        }
+        footer .new{
+            background-size: 60%;
+            background-position: center 4px;
+            background-image: url("new-ico.png");
+
+        }
+        .mainlist{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            height: auto;
+            padding: 0;
+        }
+        .mainlist li{
+            display: block;
+            height: 190px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 7px;
+        }
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    background-color: #fff;
+    z-index: 99;
+    padding: 5px;
+    text-align: left;
+    display: none;
+}
+#menu .user{
+}
+#menu .user h2{
+    display: inline-block;
+    color: #000000;
+    font-family: "segoe";
+    font-size: 18px;
+    font-weight: 500;
+    vertical-align: top;
+    margin-top: 13px;
+}
+#menu .user img{
+    width: 45px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+}
+#menu .user .gear{
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    margin-top: 13px;
+    margin-left: 32px;
+
+    display: inline-block;
+    background-image: url("settings.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#menu .menu-title{
+    font-family: "segoe";
+    background-color: #6dbeba;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 10px 5px 10px 45px;
+    margin-top: 10px;
+}
+#menu >ul{
+    margin-top: 10px;
+}
+#menu >ul > li{
+    display: block;
+    color: #247974;
+    font-family: "segoe";
+    font-weight: 400;
+    padding: 10px 5px 10px 40px;
+    background-size: 15%;
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+}
+#menu #item1{  background-image: url("menu-1.png");  }
+#menu #item2{  background-image: url("menu-2.png");  }
+#menu #item3{  background-image: url("menu-3.png");  }
+#menu #item4{  background-image: url("menu-4.png");  }
+#menu #item5{  background-image: url("menu-5.png");  }
+#menu #item6{  background-image: url("menu-6.png");  }
+
+.show{
+    display: inherit !important;
+}
+#menu >ul > li > ul{
+    display: none;
+    background-color: #d3ebea;
+    margin-left: -45px;
+    margin-right: -10px;
+    margin-top: 15px;
+}
+#menu >ul > li > ul > li{
+    display: block;
+    padding: 10px 5px 10px 45px;
+}
+
+
+
+
+#menu-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 98;
+    display: none;
+}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.cart').click(function(){
+                app.cartOpen();
+            });
+            $('.sale').click(function(){
+                app.SaleOpen();
+            });
+            $('.new').click(function(){
+                app.NewOpen();
+            });
+            $('.menu').click(function(){
+                app.MenuOpen();
+            });
+            $('.mainlist li').click(function(){
+                app.mainItemOpen();
+            });
+        });
+    </script>
+    </head>
+    <body>
+    <header>
+        <div class="menu"></div>
+        <div class="search"></div>
+        <div class="cart"></div>
+    </header>
+    <ul class="mainlist">
+        <li style="background-image: url('main-r1.png')"></li>
+        <li style="background-image: url('main-r2.png')"></li>
+        <li style="background-image: url('main-r3.png')"></li>
+        <li style="background-image: url('main-r1.png')"></li>
+        <li style="background-image: url('main-r2.png')"></li>
+        <li style="background-image: url('main-r3.png')"></li>
+    </ul>
+    <footer>
+        <div class="sale">On Sale</div>
+        <div class="new">New Items</div>
+    </footer>
+    </body>
+</html>

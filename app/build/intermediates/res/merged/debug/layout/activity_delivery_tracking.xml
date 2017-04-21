@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delivery_tracking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorWhite"
+    tools:context="com.vermilionsynergy.magadiskileton.DeliveryTrackingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorMainBg"
+                android:paddingTop="13dp">
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/goback"
+                    android:id="@+id/imageButton"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="backClick"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorMainBg" />
+
+                <com.vermilionsynergy.magadiskileton.MagadiTextView
+                    android:text="DELIVERY TRACKING"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/textView2"
+                    android:textAllCaps="true"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="2" />
+            </LinearLayout>
+            <com.vermilionsynergy.magadiskileton.MagadiTextView
+                android:text="Agromonte Semi Dry Cherry Tomatoes"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvTitle"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="2" />
+            <com.vermilionsynergy.magadiskileton.MagadiTextView
+                android:text="by Canned Food"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvSubTitle"
+                android:textAllCaps="false"
+                android:layout_marginTop="0dp"
+                android:textSize="9dp"
+                android:layout_weight="3" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/itembig"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imageView5"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <com.vermilionsynergy.magadiskileton.MagadiTextView
+                        android:text="200 g"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_height="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:id="@+id/tvWeight"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="20dp"
+                        android:textSize="14dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:padding="0dp"
+                        app:srcCompat="@drawable/stars"
+                        android:id="@+id/imageView6"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:layout_weight="2" />
+                    <com.vermilionsynergy.magadiskileton.MagadiBoldTextView
+                        android:text="AED 6.55"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_height="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:id="@+id/tvCost"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="0dp"
+                        android:textSize="26dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <com.vermilionsynergy.magadiskileton.MagadiTextView
+                android:text="Driver:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvDriverTitle"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:layout_weight="3" />
+            <com.vermilionsynergy.magadiskileton.MagadiTextView
+                android:text="Sohail Akhade Hassan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvDriver"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_weight="4" />
+            <com.vermilionsynergy.magadiskileton.MagadiTextView
+                android:text="Tracking list:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvTrackingTitle"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:textSize="12dp"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:layout_weight="5">
+
+                    <com.vermilionsynergy.magadiskileton.MagadiTextView
+                        android:text="Order Submitted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorMainBg"
+                        android:id="@+id/tvTracking1Title"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+                    <com.vermilionsynergy.magadiskileton.MagadiTextView
+                        android:text="Packed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorMainBg"
+                        android:id="@+id/tvTracking2Title"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:layout_weight="2" />
+                    <com.vermilionsynergy.magadiskileton.MagadiTextView
+                        android:text="Left the Mall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorMainBg"
+                        android:id="@+id/tvTracking3Title"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:layout_weight="3" />
+                    <com.vermilionsynergy.magadiskileton.MagadiTextView
+                        android:text="Delivered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"
+                        android:id="@+id/tvTracking4Title"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:layout_weight="4" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/deliveryprogress"
+                    android:id="@+id/imageView7"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

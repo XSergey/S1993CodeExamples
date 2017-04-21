@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <script src="jq.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css" media="screen">
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.back').click(function(){
+                cart.goBack();
+            });
+            $('.next').click(function(){
+                cart.next();
+            });
+            $('.address-list li').click(function(){
+                $('.address-list li').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    </head>
+    <body>
+    <header>
+        <div class="back"></div>
+        <div class="title">DELIVERY ADDRESS</div>
+    </header>
+    <div class="container">
+        <ul class="cart-title">
+            <li>CART</li>
+            <li>ADDRESS</li>
+        </ul>
+        <ul class="address-list">
+            <li class="active">
+                <div class="line1">FIRST ADDRESS LINE</div>
+                <div class="line2">SECOND ADDRESS LINE</div>
+                <div class="line3">1234567</div>
+                <div class="num">1</div>
+            </li>
+            <li>
+                <div class="line1">FIRST ADDRESS 2 LINE</div>
+                <div class="line2">SECOND ADDRESS 2 LINE</div>
+                <div class="line3">7654321</div>
+                <div class="num">2</div>
+            </li>
+        </ul>
+        <div class="add-addr">ADD NEW ADDERESS</div>
+    </div>
+
+    <footer>
+        <div class="next">Next</div>
+    </footer>
+    </body>
+</html>
